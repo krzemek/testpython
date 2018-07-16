@@ -1,16 +1,10 @@
-import pyglet
+#!/usr/bin/env python
 
-window = pyglet.window.Window()
 
-label = pyglet.text.Label('Hello, world2',
-                          font_name='Times New Roman',
-                          font_size=36,
-                          x=window.width//2, y=window.height//2,
-                          anchor_x='center', anchor_y='center')
+# Zadania do wykonania test.
 
-@window.event
-def on_draw():
-    window.clear()
-    label.draw()
+import os
 
-pyglet.app.run()
+path, dirs, files = next(os.walk("/usr/lib"))
+file_count = len(files)
+print("W katalogu /usr/bin jest plików: " + file_count)
