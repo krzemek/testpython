@@ -11,3 +11,7 @@ import os
 loadavg5 = os.getloadavg()[1]
 print("hello")
 print("Sredni loadavg z 5 min: " + str(loadavg5))
+
+# Dodana funkcjonalnosc tylko w galezi test. Jakis tam kod, bla, bla
+
+print(os.getlogin())
