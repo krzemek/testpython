@@ -2,7 +2,7 @@
 
 
 # Zadania do wykonania test.
-# Zmiana 1.06
+# Zmiana 1.07
 # branch test
 
 import os
