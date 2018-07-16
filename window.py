@@ -5,6 +5,7 @@
 
 import os
 
-path, dirs, files = next(os.walk("/usr/lib"))
-file_count = len(files)
-print("W katalogu /usr/bin jest plików: " + file_count)
+loadavg5 = os.getloadavg()[1]
+
+print("Sredni loadavg z 5 min: " + str(loadavg5))
+# Zmiana 1.04
